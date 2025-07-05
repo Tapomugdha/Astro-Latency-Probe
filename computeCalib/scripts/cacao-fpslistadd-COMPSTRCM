@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+FPSKWname="CACAO_FPSPROC_COMPSTRCM"
+
+FPSKWval="NULL"
+if [ ! -z "${CACAO_FPSPROC_COMPSTRCM+x}" ]; then
+	FPSKWval="$CACAO_FPSPROC_COMPSTRCM"
+fi
+
+
+# FPS name
+fpsname="compstrCM"
+fpsarg0="${CACAO_LOOPNUMBER}"
+
+# FPS full name
+fpsfname="${fpsname}-${fpsarg0}"
+
+# function call
+fpsfcall="cacaocc.compsCM"
+
+# short description
+fpsdescr="Compute straight control matrix"
+
+
+
+function fpsentry_addmodules() {
+	echo "no module to be added"
+}
+
+function fpsentry_addcmds() {
+	addfpscmd "setval ${fpsfname}.procinfo.loopcntMax 10"
+	addfpscmd "setval ${fpsfname}.RMmodesDM ../conf/RMmodesDM/RMmodesDM.fits"
+	addfpscmd "setval ${fpsfname}.RMmodesWFS ../conf/RMmodesWFS/RMmodesWFS.fits"
+	addfpscmd "setval ${fpsfname}.CMmodesDM ../conf/CMmodesDM/CMmodesDM.fits"
+	addfpscmd "setval ${fpsfname}.CMmodesWFS ../conf/CMmodesWFS/CMmodesWFS.fits"
+	addfpscmd "setval ${fpsfname}.svdlim 0.1"
+}
+
+
+
+
+source milk-fpslist-addentry
