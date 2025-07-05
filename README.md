@@ -30,8 +30,8 @@ A toolkit for measuring, analyzing, and optimizing end-to-end latency in astrono
 
 1. **Clone the Repository:**
     ```
-    git clone https://github.com/yourusername/astro-latency-bench.git
-    cd astro-latency-bench
+    git clone [https://github.com/yourusername/astro-latency-bench.git](https://github.com/Tapomugdha/Astro-latency-probe/tree/main)
+    cd astro-latency-probe
     ```
 
 2. **Set Up Hardware:**
