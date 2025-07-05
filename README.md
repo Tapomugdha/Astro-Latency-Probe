@@ -16,13 +16,13 @@ A toolkit for measuring, analyzing, and optimizing end-to-end latency in astrono
   Live image acquisition and frame captures from rtimv.
 
 - **Flexible Test Setup:**  
-  Supports a variety of scientific cameras (e.g., FLIR Blackfly S, Basler), USB3 interfaces, and custom test enclosures.
+  Supports Basler S cameras, USB3 interfaces, and custom test enclosures.
 
 ## Hardware Requirements
 
 - Arduino UNO (or compatible microcontroller)
 - LED and resistor (e.g., 100 Ω)
-- Scientific camera (e.g., FLIR Blackfly S, Basler)
+- Basler S camera
 - Custom dark box or enclosure with acrylic diffuser (recommended)
 - USB3 cables and power supply
 
