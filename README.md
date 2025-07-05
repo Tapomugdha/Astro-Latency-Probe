@@ -26,6 +26,14 @@ A toolkit for measuring, analyzing, and optimizing end-to-end latency in astrono
 - Custom dark box or enclosure with acrylic diffuser (recommended)
 - USB3 cables and power supply
 
+## Software Requirements
+
+- MILK
+- CACAO
+- ImageStreamIO
+- RTIMV
+Use respective GitHub repositories to clone the aforesaid.
+
 ## Quick Start
 
 1. **Clone the Repository:**
