@@ -26,9 +26,9 @@ This guide describes how to assemble the hardware for precise, repeatable latenc
 2. Circuit Diagram
    +5V (Arduino) ----[100Ω]----|> (LED)----GND (Arduino)
                |
-           Pin 13 (Digital Output)
+           Pin 12 (Digital Output)
 
-    Pin 13 (or any digital output pin) is used to toggle the LED ON/OFF.
+    Pin 12 (or any digital output pin) is used to toggle the LED ON/OFF.
 
     The 100 Ω resistor limits current to the LED.
 
